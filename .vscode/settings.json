@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": ".*",
+          "cmd": "docker exec -i nginx nginx -s reload"
+        }
+      ]
+    }
+  }
