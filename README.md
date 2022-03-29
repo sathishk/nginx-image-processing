@@ -4,7 +4,12 @@ Nginx Filters which can help optimize image delivery
 
 # Usage
 
+## Nginx
 ``` docker-compose up --build -d ```
+
+## API (Spring Boot)
+
+``` cd api && ./mvnw spring-boot:run```
 
 # Image Operations
 
@@ -34,6 +39,14 @@ Reload Nginx :
 Should We build Custom Modules ?
 1. Middleware for File Names
 2. Ext Filter
+
+# Caveats
+https://github.com/spring-projects/spring-framework/issues/20807
+https://serverfault.com/questions/811912/can-nginx-location-blocks-match-a-url-query-string
+
+# Improvisation
+1. Reduce Middleware
+2. Open CV
 
 # Reference
 1. https://monicalent.com/blog/2019/01/06/responsive-images-with-nginx/

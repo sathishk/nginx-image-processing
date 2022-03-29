@@ -10,7 +10,7 @@ services:
     image: my-nginx-with-cachepurge:v1
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./src:/usr/share/nginx/html
+      - ./static:/usr/share/nginx/html
     ports:
       - 80:80
       - 443:443
